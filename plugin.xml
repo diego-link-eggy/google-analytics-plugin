@@ -44,7 +44,8 @@
   </platform>
 
   <platform name="android">
-    <framework src="com.google.android.gms:play-services-analytics:+" />
+    <!-- <framework src="com.google.android.gms:play-services-analytics:+" /> -->
+    <framework src="play-services-analytics-exclude-v4.gradle" custom="true" type="gradleReference" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="UniversalAnalytics">
